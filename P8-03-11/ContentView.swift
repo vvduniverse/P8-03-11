@@ -23,9 +23,9 @@ struct ContentView: View {
             }
                 }
             NavigationLink {
-                Image(systemName: "circle.grid.cross")
-                    .resizable()
-                    .frame(width: 200, height: 200)
+                Text(Image(systemName: "circle.grid.cross"))
+                    .font(.system(size: 200, weight: .bold))
+                    .foregroundColor(.purple)
             } label: {
                 Text("Tap for Image")
             }
