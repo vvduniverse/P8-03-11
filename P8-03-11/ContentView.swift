@@ -11,14 +11,17 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                
+                List(0..<100) {row in
+                    
+               
             NavigationLink {
-                Text("Detail View")
+                Text("Detail \(row)")
             } label: {
                 
-                Text("Hello, world!")
-                    .padding()
+                Text("Row \(row)")
+                    
             }
+                }
             NavigationLink {
                 Image(systemName: "circle.grid.cross")
                     .resizable()
